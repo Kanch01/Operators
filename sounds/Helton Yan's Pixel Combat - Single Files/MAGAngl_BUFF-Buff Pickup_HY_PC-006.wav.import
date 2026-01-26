@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bhs6jkoea5a6i"
+path="res://.godot/imported/MAGAngl_BUFF-Buff Pickup_HY_PC-006.wav-7ab68566820f8ded7b0002b22ad4cb21.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/MAGAngl_BUFF-Buff Pickup_HY_PC-006.wav"
+dest_files=["res://.godot/imported/MAGAngl_BUFF-Buff Pickup_HY_PC-006.wav-7ab68566820f8ded7b0002b22ad4cb21.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

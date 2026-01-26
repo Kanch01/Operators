@@ -1,0 +1,193 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2frhlnn0qv66"]
+
+[ext_resource type="Script" uid="uid://bneb7odkoofgt" path="res://scripts/hands.gd" id="1_brbbq"]
+[ext_resource type="Texture2D" uid="uid://cxhqysuni35cf" path="res://assets/Pixel_Art_Wooden_Tile_Grid-removebg-preview.png" id="1_r67kn"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="2_brbbq"]
+[ext_resource type="StyleBox" uid="uid://byl8bkmf4k2lr" path="res://assets/UI/hand.tres" id="4_m1v21"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m1v21"]
+bg_color = Color(0.341218, 0, 0.0328702, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[node name="Hand" type="Control"]
+layout_mode = 3
+anchor_right = 0.453993
+anchor_bottom = 0.794753
+offset_left = 1.0
+offset_top = 1.0
+offset_right = -365.0
+offset_bottom = -357.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.91926, 0.918508)
+script = ExtResource("1_brbbq")
+
+[node name="dp" type="TextureRect" parent="."]
+self_modulate = Color(0.580392, 0.921569, 0.886275, 1)
+custom_minimum_size = Vector2(157, 157)
+layout_mode = 0
+anchor_right = 0.986193
+anchor_bottom = 0.996016
+offset_right = 2.51282
+offset_bottom = 0.725098
+texture = ExtResource("1_r67kn")
+expand_mode = 1
+
+[node name="handgrid" type="GridContainer" parent="dp"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.135443
+anchor_top = 0.151263
+anchor_right = 0.877229
+anchor_bottom = 0.892471
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="9" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="10" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="11" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="12" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="13" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="14" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="15" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="16" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="8" type="Button" parent="dp/handgrid"]
+custom_minimum_size = Vector2(27, 27)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 21
+theme_override_styles/disabled = ExtResource("4_m1v21")
+theme_override_styles/normal = ExtResource("4_m1v21")
+
+[node name="Permas" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="One" type="Button" parent="Permas"]
+visible = false
+layout_mode = 0
+offset_left = 153.384
+offset_top = 17.4196
+offset_right = 190.384
+offset_bottom = 54.4196
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_m1v21")
+disabled = true
+
+[node name="Two" type="Button" parent="Permas"]
+visible = false
+layout_mode = 0
+offset_left = 153.384
+offset_top = 62.0572
+offset_right = 190.384
+offset_bottom = 99.0572
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_m1v21")
+disabled = true
+
+[node name="Three" type="Button" parent="Permas"]
+visible = false
+layout_mode = 0
+offset_left = 153.384
+offset_top = 106.695
+offset_right = 190.384
+offset_bottom = 143.695
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_brbbq")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_m1v21")
+disabled = true

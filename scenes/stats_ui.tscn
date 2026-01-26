@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm68r2p1n67h2"]
+
+[ext_resource type="Script" uid="uid://do5g3isujpygr" path="res://scripts/stats_ui.gd" id="1_nv28q"]
+[ext_resource type="Texture2D" uid="uid://dcf24iex5nv23" path="res://assets/UI/Pixelated_Heart_with_Golden_Veins-removebg-preview.png" id="2_ieq6q"]
+[ext_resource type="FontFile" uid="uid://c18hrigda84h7" path="res://assets/UI/Jacquard24-Regular.ttf" id="3_vgjwo"]
+[ext_resource type="Texture2D" uid="uid://dm8sn5j8muvj" path="res://assets/UI/Medieval_Shield_in_Pixel_Art-removebg-preview.png" id="4_gl8ic"]
+
+[node name="StatsUI" type="HBoxContainer"]
+offset_top = -1.0
+offset_right = 246.0
+offset_bottom = 68.0
+script = ExtResource("1_nv28q")
+
+[node name="Health" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Heart" type="TextureRect" parent="Health"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+texture = ExtResource("2_ieq6q")
+expand_mode = 1
+
+[node name="HealthAmt" type="Label" parent="Health"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vgjwo")
+theme_override_font_sizes/font_size = 50
+text = "40"
+
+[node name="Shield" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Mini" type="TextureRect" parent="Shield"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+texture = ExtResource("4_gl8ic")
+expand_mode = 1
+
+[node name="ShieldAmt" type="Label" parent="Shield"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_vgjwo")
+theme_override_font_sizes/font_size = 50
+text = "40"

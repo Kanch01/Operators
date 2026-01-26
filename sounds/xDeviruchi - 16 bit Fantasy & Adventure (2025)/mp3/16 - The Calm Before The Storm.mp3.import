@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bdtlxfqrggkt7"
+path="res://.godot/imported/16 - The Calm Before The Storm.mp3-dbf0eb8888ac35ca62103df361f84d7a.mp3str"
+
+[deps]
+
+source_file="res://sounds/xDeviruchi - 16 bit Fantasy & Adventure (2025)/mp3/16 - The Calm Before The Storm.mp3"
+dest_files=["res://.godot/imported/16 - The Calm Before The Storm.mp3-dbf0eb8888ac35ca62103df361f84d7a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

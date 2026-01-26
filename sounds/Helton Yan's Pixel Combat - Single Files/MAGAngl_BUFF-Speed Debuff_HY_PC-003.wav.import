@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dvs8ns1bqyw8f"
+path="res://.godot/imported/MAGAngl_BUFF-Speed Debuff_HY_PC-003.wav-d8f66a01b15b7a83a3dd335b2a51c13e.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/MAGAngl_BUFF-Speed Debuff_HY_PC-003.wav"
+dest_files=["res://.godot/imported/MAGAngl_BUFF-Speed Debuff_HY_PC-003.wav-d8f66a01b15b7a83a3dd335b2a51c13e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

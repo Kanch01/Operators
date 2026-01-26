@@ -1,0 +1,327 @@
+[gd_scene load_steps=16 format=3 uid="uid://laufbcm23tkm"]
+
+[ext_resource type="Script" uid="uid://0wb5w1f5aipx" path="res://scripts/BB.gd" id="1_cq634"]
+[ext_resource type="PackedScene" uid="uid://d2if11ebj7yos" path="res://scenes/Tray.tscn" id="2_dd0to"]
+[ext_resource type="Texture2D" uid="uid://kb3ya0gaikb8" path="res://assets/Scenes/Foggy Forest Pathway.png" id="2_fc6g5"]
+[ext_resource type="PackedScene" uid="uid://d2frhlnn0qv66" path="res://scenes/hand.tscn" id="4_fc6g5"]
+[ext_resource type="Shader" uid="uid://dfgei47h5q5ik" path="res://scripts/TimeStop.gdshader" id="4_jigs8"]
+[ext_resource type="Texture2D" uid="uid://dr8uu7swb05kb" path="res://assets/Enemies/mino_v1.1_free/bonus_mino_healthbar_UI/mino_health_progress.png" id="7_efl5f"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="7_k3s2g"]
+[ext_resource type="Script" uid="uid://c1rpbppm3kq1r" path="res://scripts/canvas_modulate.gd" id="8_efl5f"]
+[ext_resource type="Script" uid="uid://bssk56400hgyp" path="res://scripts/camera_2d.gd" id="8_s20tb"]
+[ext_resource type="Texture2D" uid="uid://60p5c18m0v3y" path="res://assets/Enemies/mino_v1.1_free/bonus_mino_healthbar_UI/mino_health_under.png" id="9_efl5f"]
+[ext_resource type="Script" uid="uid://43sn363c4ubo" path="res://scripts/stats.gd" id="10_xgiip"]
+[ext_resource type="Shader" uid="uid://c73jhnlld418f" path="res://scripts/bleed.gdshader" id="11_e5mtk"]
+[ext_resource type="PackedScene" uid="uid://vkkeyk082wsp" path="res://scenes/item_inven.tscn" id="13_6l8ox"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jigs8"]
+shader = ExtResource("11_e5mtk")
+shader_parameter/alpha = 1.0
+shader_parameter/inner_radius = 0.0
+shader_parameter/outer_radius = 1.0
+shader_parameter/top = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6l8ox"]
+shader = ExtResource("4_jigs8")
+shader_parameter/amount = 1.0
+shader_parameter/radius = 1.0
+shader_parameter/feather = 0.2
+
+[node name="BB" type="Node2D"]
+script = ExtResource("1_cq634")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(-1, -129)
+scale = Vector2(0.750651, 0.758789)
+texture = ExtResource("2_fc6g5")
+centered = false
+
+[node name="Bleed" type="ColorRect" parent="."]
+z_index = 1
+material = SubResource("ShaderMaterial_jigs8")
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Health" type="TextureProgressBar" parent="."]
+offset_left = 368.0
+offset_top = 436.0
+offset_right = 587.0
+offset_bottom = 500.0
+scale = Vector2(2, 2)
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("7_efl5f")
+tint_under = Color(0.31565, 0.459486, 0.146041, 1)
+
+[node name="Label" type="Label" parent="Health"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.461
+anchor_top = 0.336
+anchor_right = 0.525
+anchor_bottom = 0.578
+offset_left = -41.959
+offset_top = -0.504
+offset_right = 44.025
+offset_bottom = 0.00799942
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 15
+text = "HP"
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+script = ExtResource("8_s20tb")
+
+[node name="DeSlow" type="CanvasModulate" parent="."]
+script = ExtResource("8_efl5f")
+desat_gray = Color(0.788235, 0, 0.0627451, 0.454902)
+
+[node name="EHealth" type="TextureProgressBar" parent="."]
+offset_left = 378.0
+offset_top = 10.0
+offset_right = 773.0
+offset_bottom = 108.0
+nine_patch_stretch = true
+texture_under = ExtResource("9_efl5f")
+texture_progress = ExtResource("7_efl5f")
+script = ExtResource("10_xgiip")
+
+[node name="EAMT" type="Label" parent="EHealth"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.441
+anchor_top = 0.327
+anchor_right = 0.562
+anchor_bottom = 0.612
+offset_left = -0.195007
+offset_top = -0.0460014
+offset_right = 0.00997925
+offset_bottom = 0.0239944
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 27
+text = "12/12"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="miss" type="Label" parent="."]
+visible = false
+offset_left = 416.0
+offset_top = 310.0
+offset_right = 744.0
+offset_bottom = 418.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 100
+text = "MISS"
+horizontal_alignment = 1
+
+[node name="BattleTimer" type="Timer" parent="."]
+
+[node name="Label" type="Label" parent="BattleTimer"]
+offset_left = 962.0
+offset_top = 26.0
+offset_right = 1124.0
+offset_bottom = 90.0
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 34
+text = "00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Begin" type="Label" parent="."]
+z_index = 5
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 278.0
+offset_top = 140.0
+offset_right = 867.0
+offset_bottom = 441.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.290196, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 45
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 200
+text = "BEGIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TimeStop" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_6l8ox")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tray" parent="." instance=ExtResource("2_dd0to")]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_top = 0.0
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = 360.0
+offset_top = 356.0
+offset_right = 875.0
+offset_bottom = 614.0
+grow_vertical = 1
+
+[node name="Hand" parent="." instance=ExtResource("4_fc6g5")]
+clip_children = 1
+offset_left = 674.0
+offset_top = 504.0
+offset_right = 674.0
+offset_bottom = 504.0
+
+[node name="Shield" type="TextureProgressBar" parent="."]
+visible = false
+self_modulate = Color(0, 1, 1, 1)
+offset_left = 368.0
+offset_top = 430.0
+offset_right = 587.0
+offset_bottom = 471.0
+scale = Vector2(2, 2)
+max_value = 3.0
+value = 3.0
+nine_patch_stretch = true
+texture_progress = ExtResource("7_efl5f")
+tint_progress = Color(0, 1, 1, 1)
+
+[node name="Label" type="Label" parent="Shield"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.491
+anchor_top = 0.463
+anchor_right = 0.491
+anchor_bottom = 0.463
+offset_left = -7.52901
+offset_top = -3.98301
+offset_right = 38.471
+offset_bottom = 23.017
+scale = Vector2(0.3, 0.3)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 27
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Item_Inven" parent="." instance=ExtResource("13_6l8ox")]
+offset_left = 316.0
+offset_top = 512.0
+offset_right = 316.0
+offset_bottom = 512.216
+scale = Vector2(0.62, 0.62)
+
+[node name="Boss_inven" type="Control" parent="."]
+z_index = 2
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BHealth" type="TextureProgressBar" parent="Boss_inven"]
+visible = false
+self_modulate = Color(0.458587, 0.00270418, 0.917429, 1)
+layout_mode = 0
+offset_left = 1174.0
+offset_top = 110.0
+offset_right = 1643.0
+offset_bottom = 244.0
+rotation = 1.57079
+value = 100.0
+fill_mode = 1
+nine_patch_stretch = true
+texture_progress = ExtResource("7_efl5f")
+
+[node name="BDMG" type="TextureProgressBar" parent="Boss_inven"]
+visible = false
+modulate = Color(0.792632, 0.66633, 1, 1)
+layout_mode = 0
+offset_left = 1114.0
+offset_top = 110.0
+offset_right = 1582.0
+offset_bottom = 220.0
+rotation = 1.57079
+value = 100.0
+fill_mode = 1
+nine_patch_stretch = true
+texture_progress = ExtResource("7_efl5f")
+
+[node name="BSDMG" type="TextureProgressBar" parent="Boss_inven"]
+visible = false
+modulate = Color(0.201527, 0.201527, 0.201527, 1)
+layout_mode = 0
+offset_left = 1114.0
+offset_top = 110.0
+offset_right = 1582.0
+offset_bottom = 220.0
+rotation = 1.57079
+value = 30.0
+nine_patch_stretch = true
+texture_progress = ExtResource("7_efl5f")
+
+[node name="Phase_Label" type="Label" parent="Boss_inven"]
+visible = false
+layout_mode = 0
+offset_left = 1052.0
+offset_top = 36.0
+offset_right = 1124.0
+offset_bottom = 118.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 75
+horizontal_alignment = 1
+
+[node name="Phase_Timer" type="Timer" parent="Boss_inven"]
+
+[node name="Info_SC" type="Label" parent="Boss_inven"]
+visible = false
+layout_mode = 0
+offset_left = 268.0
+offset_top = 246.0
+offset_right = 1044.0
+offset_bottom = 408.0
+scale = Vector2(0.8, 0.8)
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Health" type="Label" parent="Boss_inven"]
+visible = false
+layout_mode = 0
+offset_left = 1096.0
+offset_top = 582.0
+offset_right = 1136.0
+offset_bottom = 611.0
+scale = Vector2(0.8, 0.8)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+
+[node name="DMG" type="Label" parent="Boss_inven"]
+visible = false
+layout_mode = 0
+offset_left = 1046.0
+offset_top = 582.0
+offset_right = 1086.0
+offset_bottom = 611.0
+scale = Vector2(0.8, 0.8)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("7_k3s2g")
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://i7pkivqmntit"
+path="res://.godot/imported/19 - Where The Winds Roam.ogg-b3c3f37c9cb7883ed02935fb5a1f9af4.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/xDeviruchi - 16 bit Fantasy & Adventure (2025)/Loopable + one shots/ogg/19 - Where The Winds Roam.ogg"
+dest_files=["res://.godot/imported/19 - Where The Winds Roam.ogg-b3c3f37c9cb7883ed02935fb5a1f9af4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cctv5thm4tewy"
+path="res://.godot/imported/MAGSpel_CAST-Hollow Spell_HY_PC-001.wav-ddc61bdfb52f1c1e261dbac448487983.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/MAGSpel_CAST-Hollow Spell_HY_PC-001.wav"
+dest_files=["res://.godot/imported/MAGSpel_CAST-Hollow Spell_HY_PC-001.wav-ddc61bdfb52f1c1e261dbac448487983.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ct4r272tyea2o"
+path="res://.godot/imported/WHSH_MOVEMENT-Noise Zap_HY_PC-004.wav-87145511a370fc39585f78c803b56bcc.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/WHSH_MOVEMENT-Noise Zap_HY_PC-004.wav"
+dest_files=["res://.godot/imported/WHSH_MOVEMENT-Noise Zap_HY_PC-004.wav-87145511a370fc39585f78c803b56bcc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

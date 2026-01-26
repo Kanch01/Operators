@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bg4ysa3025vbj"
+path="res://.godot/imported/DSGNTonl_USABLE-Toony Zap_HY_PC-006.wav-299c59c1a208fc9d24a5ac9b107c0c72.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/DSGNTonl_USABLE-Toony Zap_HY_PC-006.wav"
+dest_files=["res://.godot/imported/DSGNTonl_USABLE-Toony Zap_HY_PC-006.wav-299c59c1a208fc9d24a5ac9b107c0c72.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

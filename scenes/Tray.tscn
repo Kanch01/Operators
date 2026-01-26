@@ -1,0 +1,240 @@
+[gd_scene load_steps=14 format=3 uid="uid://d2if11ebj7yos"]
+
+[ext_resource type="Texture2D" uid="uid://csdi8rjokmxn2" path="res://assets/UI/Screenshot 2025-07-13 at 2.12.34 AM.png" id="1_aqcsd"]
+[ext_resource type="Script" uid="uid://cfumdcroiemy3" path="res://scripts/Tray.gd" id="1_volnv"]
+[ext_resource type="Texture2D" uid="uid://bdkytydca18nw" path="res://assets/UI/Pixelated_Green_Button_with_Plus_Sign-removebg-preview.png" id="2_r5keu"]
+[ext_resource type="Texture2D" uid="uid://c2c2ne2ta1k6w" path="res://assets/UI/Pixelated_Red_Minus_Sign-removebg-preview.png" id="3_volnv"]
+[ext_resource type="Texture2D" uid="uid://bv0dkpnjtnb0b" path="res://assets/UI/Pixelated_Blue_Button_with_Yellow__X_-removebg-preview.png" id="4_noeak"]
+[ext_resource type="Texture2D" uid="uid://dst64nagl56nl" path="res://assets/UI/Pixel_Art_Division_Button-removebg-preview.png" id="5_lugpg"]
+[ext_resource type="Texture2D" uid="uid://cgl02uaj4f26" path="res://assets/UI/Pixel_Art_Button_with_Parenthesis-removebg-preview.png" id="7_noeak"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="8_noeak"]
+[ext_resource type="StyleBox" uid="uid://cp7f1514kqduv" path="res://assets/UI/Tray.tres" id="9_lugpg"]
+
+[sub_resource type="Gradient" id="Gradient_keybn"]
+offsets = PackedFloat32Array(0.0162338, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oo7ib"]
+gradient = SubResource("Gradient_keybn")
+height = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_volnv"]
+bg_color = Color(0.557923, 0.0855869, 0.0517391, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_noeak"]
+bg_color = Color(0.0679025, 0.278699, 0.52183, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
+
+[node name="Tray" type="Control"]
+layout_mode = 3
+anchor_left = 0.051
+anchor_top = 0.157
+anchor_right = 0.494
+anchor_bottom = 0.549
+offset_left = 0.247997
+offset_top = 0.264
+offset_right = -0.0880127
+offset_bottom = 0.247986
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_volnv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.282353, 0.486275, 0.164706, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.504
+anchor_right = 0.606
+anchor_bottom = 1.098
+offset_top = 28.984
+offset_right = -0.0599976
+offset_bottom = 0.108002
+texture = ExtResource("1_aqcsd")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.008
+anchor_top = 0.618
+anchor_right = 0.598
+anchor_bottom = 0.717
+offset_left = -0.0799966
+offset_top = 0.0279846
+offset_right = 0.019989
+offset_bottom = -0.117996
+texture = SubResource("GradientTexture2D_oo7ib")
+expand_mode = 1
+
+[node name="Operators" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.012
+anchor_top = 0.587
+anchor_right = 0.522
+anchor_bottom = 0.744
+offset_left = -0.12
+offset_top = -0.0980072
+offset_right = -0.219971
+offset_bottom = 0.0240021
+alignment = 2
+
+[node name="Plus" type="TextureButton" parent="Operators"]
+modulate = Color(0.927533, 0.927533, 0.927533, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+tooltip_text = "+"
+texture_normal = ExtResource("2_r5keu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Minus" type="TextureButton" parent="Operators"]
+modulate = Color(0.929412, 0.929412, 0.929412, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+tooltip_text = "-"
+texture_normal = ExtResource("3_volnv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Mult" type="TextureButton" parent="Operators"]
+modulate = Color(0.929412, 0.929412, 0.929412, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+tooltip_text = "*"
+texture_normal = ExtResource("4_noeak")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Div" type="TextureButton" parent="Operators"]
+modulate = Color(0.929412, 0.929412, 0.929412, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+tooltip_text = "/"
+texture_normal = ExtResource("5_lugpg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Plus2" type="TextureButton" parent="Operators"]
+modulate = Color(0.929412, 0.929412, 0.929412, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+tooltip_text = "("
+texture_normal = ExtResource("7_noeak")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Plus3" type="TextureButton" parent="Operators"]
+modulate = Color(0.929412, 0.929412, 0.929412, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+tooltip_text = ")"
+texture_normal = ExtResource("7_noeak")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="Expression" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.024
+anchor_top = 0.744
+anchor_right = 0.569
+anchor_bottom = 0.906
+offset_left = -0.24
+offset_top = 0.0239868
+offset_right = -0.190033
+offset_bottom = -0.124023
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.772549, 0.772549, 0.772549, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("8_noeak")
+theme_override_font_sizes/font_size = 40
+
+[node name="Result" type="Label" parent="."]
+layout_mode = 2
+anchor_left = 0.022
+anchor_top = 0.921
+anchor_right = 0.288
+anchor_bottom = 1.063
+offset_left = -0.219997
+offset_top = 0.0659943
+offset_right = 0.119995
+offset_bottom = -0.00201416
+theme_override_colors/font_color = Color(0.770839, 0.77084, 0.770839, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("8_noeak")
+theme_override_font_sizes/font_size = 35
+
+[node name="Rands" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.294
+anchor_top = 0.969
+anchor_right = 0.586
+anchor_bottom = 1.059
+offset_left = 0.0599976
+offset_top = -0.126007
+offset_right = 0.139984
+offset_bottom = 0.0140076
+
+[node name="Submit" type="Button" parent="Rands"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.772549, 0.772549, 0.772549, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("8_noeak")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/disabled = ExtResource("9_lugpg")
+theme_override_styles/normal = ExtResource("9_lugpg")
+text = "SUBMIT"
+
+[node name="Delete" type="Button" parent="Rands"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.772549, 0.772549, 0.772549, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("8_noeak")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_volnv")
+text = "DELETE"
+
+[node name="Clear" type="Button" parent="Rands"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.772549, 0.772549, 0.772549, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("8_noeak")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_noeak")
+text = "CLEAR"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true

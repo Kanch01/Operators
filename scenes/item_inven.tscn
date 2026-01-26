@@ -1,0 +1,97 @@
+[gd_scene load_steps=5 format=3 uid="uid://vkkeyk082wsp"]
+
+[ext_resource type="Script" uid="uid://bhxomrjxau4od" path="res://scripts/item_inven.gd" id="1_1ow2c"]
+[ext_resource type="Texture2D" uid="uid://b1sb7m3f3vyk" path="res://assets/RectangleBox_96x96.png" id="5_flw7m"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="6_mxfmw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwrp4"]
+bg_color = Color(1.58831e-06, 0.36056, 0.0914451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Item_Inven" type="Control"]
+layout_mode = 3
+anchor_right = 0.056
+anchor_bottom = 0.333
+offset_right = -0.512001
+offset_bottom = 0.216003
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1ow2c")
+
+[node name="PassOne" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+disabled = true
+
+[node name="PassTwo" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 70.0
+offset_right = 64.0
+offset_bottom = 134.0
+disabled = true
+
+[node name="Consume" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 138.0
+offset_right = 64.0
+offset_bottom = 202.0
+disabled = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+self_modulate = Color(0.151607, 0.260003, 0.277629, 1)
+layout_mode = 0
+offset_left = -522.0
+offset_top = -48.0
+offset_right = -16.0
+offset_bottom = 198.0
+texture = ExtResource("5_flw7m")
+
+[node name="Label" type="Label" parent="TextureRect"]
+modulate = Color(0.815389, 0.815389, 0.815389, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.122
+anchor_top = 0.152
+anchor_right = 0.872
+anchor_bottom = 0.879
+offset_left = -0.580002
+offset_top = -4.096
+offset_right = -0.0799866
+offset_bottom = -0.0420074
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/paragraph_spacing = 8
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("6_mxfmw")
+theme_override_font_sizes/font_size = 30
+text = "Milk
+Cures of any and all diseases and does other stuff but that is a surprise"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="TextureRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.395
+anchor_top = 0.747
+anchor_right = 0.6
+anchor_bottom = 0.869
+offset_left = -0.0500031
+offset_top = 0.0939941
+offset_right = -1.52588e-05
+offset_bottom = 1.938
+theme_override_fonts/font = ExtResource("6_mxfmw")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_wwrp4")
+text = "USE"

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctok1tmwe44li"]
+
+[ext_resource type="Script" uid="uid://do0lsmfaa5kcu" path="res://scripts/run.gd" id="1_2d5n6"]
+[ext_resource type="PackedScene" uid="uid://be101q000b8os" path="res://scenes/intermittent.tscn" id="2_6elw1"]
+[ext_resource type="AudioStream" uid="uid://c6gnsdtkopjvu" path="res://sounds/Helton Yan's Pixel Combat - Single Files/UIClick_INTERFACE-Strong Click 2_HY_PC-006.wav" id="2_kyqep"]
+
+[node name="Run" type="Node"]
+script = ExtResource("1_2d5n6")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+autoplay = true
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_kyqep")
+volume_db = -80.0
+
+[node name="Intermittent" parent="." instance=ExtResource("2_6elw1")]
+visible = false
+
+[node name="SceneContainer" type="Node" parent="."]

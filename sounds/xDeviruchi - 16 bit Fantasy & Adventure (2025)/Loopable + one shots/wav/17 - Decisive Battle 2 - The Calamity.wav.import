@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bc4dtqni15eqj"
+path="res://.godot/imported/17 - Decisive Battle 2 - The Calamity.wav-b4f75b4e6e3875ceba1369272bcd29fb.sample"
+
+[deps]
+
+source_file="res://sounds/xDeviruchi - 16 bit Fantasy & Adventure (2025)/Loopable + one shots/wav/17 - Decisive Battle 2 - The Calamity.wav"
+dest_files=["res://.godot/imported/17 - Decisive Battle 2 - The Calamity.wav-b4f75b4e6e3875ceba1369272bcd29fb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

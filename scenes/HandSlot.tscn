@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6d3k7qd7v3sa"]
+
+[ext_resource type="Script" uid="uid://6jxkk5ou328b" path="res://scripts/HandSlot.gd" id="1_vr6ut"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dhm05"]
+bg_color = Color(0.831373, 0.572549, 0.352941, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kb4dp"]
+bg_color = Color(0.830809, 0.574075, 0.35298, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="HandSlot" type="Button"]
+custom_minimum_size = Vector2(10, 10)
+anchors_preset = -1
+anchor_left = -0.022
+anchor_top = -0.039
+anchor_right = 0.023
+anchor_bottom = 0.037
+offset_left = 0.344002
+offset_top = 0.272001
+offset_right = -0.496002
+offset_bottom = 0.0240002
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 7
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_dhm05")
+theme_override_styles/normal = SubResource("StyleBoxFlat_kb4dp")
+text = "D"
+script = ExtResource("1_vr6ut")

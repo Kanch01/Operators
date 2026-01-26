@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cfcdv2pk6ml5j"
+path="res://.godot/imported/UIGlitch_USABLE-Glassy Click_HY_PC-001.wav-907e998f535f06a49067a84da4d6c66c.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/UIGlitch_USABLE-Glassy Click_HY_PC-001.wav"
+dest_files=["res://.godot/imported/UIGlitch_USABLE-Glassy Click_HY_PC-001.wav-907e998f535f06a49067a84da4d6c66c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

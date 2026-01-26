@@ -1,0 +1,170 @@
+[gd_scene load_steps=10 format=3 uid="uid://be101q000b8os"]
+
+[ext_resource type="Shader" uid="uid://b6bh2lka6ven8" path="res://scripts/intermittent.gdshader" id="1_djp4x"]
+[ext_resource type="Script" uid="uid://dpqcvjsod41vk" path="res://scripts/intermittent.gd" id="2_d2800"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="3_foucg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d2800"]
+shader = ExtResource("1_djp4x")
+shader_parameter/radius = 0.0
+shader_parameter/feather = 0.1
+shader_parameter/opacity = 1.0
+
+[sub_resource type="Animation" id="Animation_gkyy7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_1atsb"]
+resource_name = "full"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.22173, 2.44346, 3.66519, 4.88692, 6.28319, 4.88692, 3.66519, 2.44346, 1.22173, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1.2, 1.2), Vector2(1.3, 1.3), Vector2(1.4, 1.4), Vector2(1.5, 1.5), Vector2(1.4, 1.4), Vector2(1.3, 1.3), Vector2(1.2, 1.2), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_wfnrl"]
+resource_name = "spinning"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.22173, 2.44346, 3.66519, 4.88692, 6.28319]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1.2, 1.2), Vector2(1.3, 1.3), Vector2(1.4, 1.4), Vector2(1.5, 1.5)]
+}
+
+[sub_resource type="Animation" id="Animation_foucg"]
+resource_name = "spinning_rev"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.5, 1.5), Vector2(1.4, 1.4), Vector2(1.3, 1.3), Vector2(1.2, 1.2), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [6.28319, 4.88692, 3.66519, 2.44346, 1.22173, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1atsb"]
+_data = {
+&"RESET": SubResource("Animation_gkyy7"),
+&"full": SubResource("Animation_1atsb"),
+&"spinning": SubResource("Animation_wfnrl"),
+&"spinning_rev": SubResource("Animation_foucg")
+}
+
+[node name="Intermittent" type="ColorRect"]
+self_modulate = Color(0, 0.156863, 0, 1)
+z_index = 4
+material = SubResource("ShaderMaterial_d2800")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_d2800")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(48, 100.5)
+theme_override_colors/font_color = Color(0.952941, 0.858824, 0.682353, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 11
+theme_override_constants/shadow_outline_size = 19
+theme_override_fonts/font = ExtResource("3_foucg")
+theme_override_font_sizes/font_size = 200
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_1atsb")
+}

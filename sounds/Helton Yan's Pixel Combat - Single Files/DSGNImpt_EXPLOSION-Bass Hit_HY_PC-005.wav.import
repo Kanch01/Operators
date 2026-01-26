@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://1ct7el0c0x5i"
+path="res://.godot/imported/DSGNImpt_EXPLOSION-Bass Hit_HY_PC-005.wav-9cc048dcd3cec175451902d6855b801b.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/DSGNImpt_EXPLOSION-Bass Hit_HY_PC-005.wav"
+dest_files=["res://.godot/imported/DSGNImpt_EXPLOSION-Bass Hit_HY_PC-005.wav-9cc048dcd3cec175451902d6855b801b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

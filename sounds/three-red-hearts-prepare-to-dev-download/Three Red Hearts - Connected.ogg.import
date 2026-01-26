@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dscboowofdup4"
+path="res://.godot/imported/Three Red Hearts - Connected.ogg-0c38c1bca2e17a95610468c62f824bbf.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/three-red-hearts-prepare-to-dev-download/Three Red Hearts - Connected.ogg"
+dest_files=["res://.godot/imported/Three Red Hearts - Connected.ogg-0c38c1bca2e17a95610468c62f824bbf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

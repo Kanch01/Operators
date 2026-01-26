@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://b31o28qvxmwts"]
+
+[ext_resource type="Script" uid="uid://c2id0tywvwbl" path="res://scripts/money.gd" id="1_7xgx0"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="1_dia0j"]
+[ext_resource type="Texture2D" uid="uid://d240mxblejklb" path="res://assets/UI/Pixelated_Gold_Coin_Design-removebg-preview.png" id="2_7xgx0"]
+
+[node name="Money" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7xgx0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 5.0
+offset_right = 98.0
+offset_bottom = 28.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("1_dia0j")
+theme_override_font_sizes/font_size = 25
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(17, 18)
+scale = Vector2(0.039, 0.039)
+texture = ExtResource("2_7xgx0")

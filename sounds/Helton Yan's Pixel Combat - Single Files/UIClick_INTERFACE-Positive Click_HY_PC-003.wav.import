@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5ccd1moqyec"
+path="res://.godot/imported/UIClick_INTERFACE-Positive Click_HY_PC-003.wav-7e9e9ed2450ee930ade2860a7a16b34f.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/UIClick_INTERFACE-Positive Click_HY_PC-003.wav"
+dest_files=["res://.godot/imported/UIClick_INTERFACE-Positive Click_HY_PC-003.wav-7e9e9ed2450ee930ade2860a7a16b34f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

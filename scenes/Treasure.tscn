@@ -1,0 +1,314 @@
+[gd_scene load_steps=11 format=3 uid="uid://xs2qpfah377h"]
+
+[ext_resource type="Script" uid="uid://cvv18m5golwny" path="res://scripts/treasure.gd" id="1_nn4h2"]
+[ext_resource type="Texture2D" uid="uid://c2g03mi1bm1bl" path="res://assets/Scenes/Euler's Bust in Moonlit Forest.png" id="2_6qld6"]
+[ext_resource type="Texture2D" uid="uid://dmr3aq0icc0tw" path="res://assets/needed/Worn Hardcover Book in Pixel Art.png" id="3_16e7s"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="4_u2xkn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yjnrq"]
+bg_color = Color(0.316, 0.06, 0, 0.702)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 0.599)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="Animation" id="Animation_c83eu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Book1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(150, 165)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Book2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(784, 185)]
+}
+
+[sub_resource type="Animation" id="Animation_2ltvd"]
+resource_name = "books"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Book1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(150, 185), Vector2(150, 145)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Book2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(784, 145), Vector2(784, 185)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_24kwl"]
+_data = {
+&"RESET": SubResource("Animation_c83eu"),
+&"books": SubResource("Animation_2ltvd")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qld6"]
+bg_color = Color(0.618911, 0.475355, 1.92523e-07, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16e7s"]
+bg_color = Color(0.419935, 0.0114839, 4.81308e-08, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[node name="Treasure" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nn4h2")
+
+[node name="BackRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -68.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6qld6")
+expand_mode = 1
+
+[node name="Book1" type="TextureButton" parent="."]
+self_modulate = Color(0.501961, 0.901961, 1, 1)
+layout_mode = 0
+offset_left = 150.0
+offset_top = 185.0
+offset_right = 335.0
+offset_bottom = 362.0
+texture_normal = ExtResource("3_16e7s")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Num1" type="Button" parent="Book1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.048
+anchor_bottom = 0.079
+offset_left = 46.0
+offset_top = 13.0
+offset_right = 143.12
+offset_bottom = 122.017
+theme_override_colors/font_color = Color(0.519162, 0.519162, 0.519162, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxFlat_yjnrq")
+text = "3"
+flat = true
+
+[node name="Book2" type="TextureButton" parent="."]
+self_modulate = Color(0.501961, 0.901961, 1, 1)
+layout_mode = 0
+offset_left = 784.0
+offset_top = 145.0
+offset_right = 969.0
+offset_bottom = 322.0
+texture_normal = ExtResource("3_16e7s")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
+
+[node name="Num2" type="Button" parent="Book2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.048
+anchor_bottom = 0.079
+offset_left = 31.0
+offset_top = 13.0
+offset_right = 128.12
+offset_bottom = 122.017
+theme_override_colors/font_color = Color(0.519162, 0.519162, 0.519162, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxFlat_yjnrq")
+text = "1"
+flat = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_24kwl")
+}
+autoplay = "books"
+
+[node name="Box" type="Line2D" parent="."]
+position = Vector2(871, -214)
+scale = Vector2(0.7, 0.7)
+points = PackedVector2Array(262, 318, 307.2, 318, 389, 318, 389, 441, 262, 441)
+closed = true
+width = 3.0
+default_color = Color(0.456, 0.456, 0.456, 0.552)
+
+[node name="Bag" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Bag3" type="Button" parent="Bag"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.048
+anchor_bottom = 0.079
+offset_left = 1055.0
+offset_top = 10.0
+offset_right = 1141.08
+offset_bottom = 90.84
+theme_override_colors/font_color = Color(0.519162, 0.519162, 0.519162, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxFlat_yjnrq")
+disabled = true
+flat = true
+
+[node name="Bag2" type="Button" parent="Bag"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.048
+anchor_bottom = 0.079
+offset_left = 967.0
+offset_top = 10.0
+offset_right = 1051.08
+offset_bottom = 89.84
+theme_override_colors/font_color = Color(0.519162, 0.519162, 0.519162, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxFlat_yjnrq")
+disabled = true
+flat = true
+
+[node name="Bag1" type="Button" parent="Bag"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.048
+anchor_bottom = 0.079
+offset_left = 878.0
+offset_top = 10.0
+offset_right = 962.08
+offset_bottom = 89.84
+theme_override_colors/font_color = Color(0.519162, 0.519162, 0.519162, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 67
+theme_override_styles/normal = SubResource("StyleBoxFlat_yjnrq")
+disabled = true
+flat = true
+
+[node name="Box2" type="Line2D" parent="."]
+position = Vector2(782, -214)
+scale = Vector2(0.7, 0.7)
+points = PackedVector2Array(262, 318, 307.2, 318, 389, 318, 389, 441, 262, 441)
+closed = true
+width = 3.0
+default_color = Color(0.456, 0.456, 0.456, 0.552)
+
+[node name="Box3" type="Line2D" parent="."]
+position = Vector2(693, -214)
+scale = Vector2(0.7, 0.7)
+points = PackedVector2Array(262, 318, 307.2, 318, 389, 318, 389, 441, 262, 441)
+closed = true
+width = 3.0
+default_color = Color(0.456, 0.456, 0.456, 0.552)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 526.0
+offset_right = 985.0
+offset_bottom = 593.0
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Add" type="Button" parent="."]
+layout_mode = 0
+offset_left = 920.0
+offset_top = 586.0
+offset_right = 1006.0
+offset_bottom = 621.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_6qld6")
+disabled = true
+text = "ADD"
+
+[node name="Delete" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1022.0
+offset_top = 586.0
+offset_right = 1108.0
+offset_bottom = 621.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("4_u2xkn")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_16e7s")
+disabled = true
+text = "DELETE"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true

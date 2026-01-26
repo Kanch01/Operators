@@ -1,0 +1,488 @@
+[gd_scene load_steps=65 format=3 uid="uid://dft82wjcguln6"]
+
+[ext_resource type="Script" uid="uid://chlwttrrwqtos" path="res://scripts/char_select.gd" id="1_a2t0j"]
+[ext_resource type="Texture2D" uid="uid://dwdovft426tsf" path="res://assets/Scenes/Abandoned Classroom with Faded Order.jpg" id="1_pepy4"]
+[ext_resource type="Texture2D" uid="uid://sebl4omvck5a" path="res://assets/UI/Pixel_Art_Cat_Coin-removebg-preview.png" id="2_a2t0j"]
+[ext_resource type="Texture2D" uid="uid://b1puilnytf3ip" path="res://assets/UI/ChatGPT_Image_Jul_15__2025__03_17_21_PM-removebg-preview.png" id="3_lcdbo"]
+[ext_resource type="Texture2D" uid="uid://djedeb51ntwv4" path="res://assets/UI/ChatGPT_Image_Jul_15__2025__03_01_28_PM-removebg-preview.png" id="4_dgebt"]
+[ext_resource type="Texture2D" uid="uid://djoftmuysramj" path="res://assets/UI/Pixel_Tiger_Coin_Emblem-removebg-preview.png" id="5_5kqyn"]
+[ext_resource type="Texture2D" uid="uid://c8h3jxrtw050a" path="res://assets/UI/9 Calender/49.png" id="7_5y5ad"]
+[ext_resource type="Texture2D" uid="uid://bvpxrsq2i3g6w" path="res://assets/UI/9 Calender/48.png" id="8_3kdj3"]
+[ext_resource type="Texture2D" uid="uid://el6w07yxmyrd" path="res://assets/UI/9 Calender/47.png" id="9_ftgd8"]
+[ext_resource type="Texture2D" uid="uid://cguwmsfuol35e" path="res://assets/UI/9 Calender/46.png" id="10_bdipa"]
+[ext_resource type="Texture2D" uid="uid://dsvq4mg6ki54v" path="res://assets/UI/9 Calender/45.png" id="11_3rsys"]
+[ext_resource type="Texture2D" uid="uid://byxw54gcajt4n" path="res://assets/UI/9 Calender/44.png" id="12_rc61t"]
+[ext_resource type="Texture2D" uid="uid://c3vtk571udg11" path="res://assets/UI/9 Calender/43.png" id="13_d6e3u"]
+[ext_resource type="Texture2D" uid="uid://dwkjdaku78ukd" path="res://assets/UI/9 Calender/42.png" id="14_peqjy"]
+[ext_resource type="Texture2D" uid="uid://61i5jooi57ha" path="res://assets/UI/9 Calender/41.png" id="15_2ayou"]
+[ext_resource type="Texture2D" uid="uid://bcbjpo558cnv7" path="res://assets/UI/9 Calender/40.png" id="16_ygykx"]
+[ext_resource type="Texture2D" uid="uid://cigb313dyx3yc" path="res://assets/UI/9 Calender/39.png" id="17_2vlo0"]
+[ext_resource type="Texture2D" uid="uid://wpsbnqir20aw" path="res://assets/UI/9 Calender/38.png" id="18_yf0qw"]
+[ext_resource type="Texture2D" uid="uid://ctp5fpmlplold" path="res://assets/UI/9 Calender/37.png" id="19_dg3f5"]
+[ext_resource type="Texture2D" uid="uid://4v3e64gcmyxq" path="res://assets/UI/9 Calender/36.png" id="20_hnu5c"]
+[ext_resource type="Texture2D" uid="uid://cttmyvlqus8i" path="res://assets/UI/9 Calender/35.png" id="21_ele25"]
+[ext_resource type="Texture2D" uid="uid://di8r6fk8q6e8x" path="res://assets/UI/9 Calender/34.png" id="22_ibj5k"]
+[ext_resource type="Texture2D" uid="uid://bc8uro6ul8pd6" path="res://assets/UI/9 Calender/33.png" id="23_te6nd"]
+[ext_resource type="Texture2D" uid="uid://c7omshfmk1dca" path="res://assets/UI/9 Calender/32.png" id="24_3ywge"]
+[ext_resource type="Texture2D" uid="uid://b2rf562jud4j8" path="res://assets/UI/9 Calender/31.png" id="25_cudxb"]
+[ext_resource type="Texture2D" uid="uid://dbvvcsn1uld88" path="res://assets/UI/9 Calender/30.png" id="26_w7ur0"]
+[ext_resource type="Texture2D" uid="uid://drph2g43brqi7" path="res://assets/UI/9 Calender/29.png" id="27_n7dcs"]
+[ext_resource type="Texture2D" uid="uid://b5y0f8k7hcvrj" path="res://assets/UI/9 Calender/28.png" id="28_u8df7"]
+[ext_resource type="Texture2D" uid="uid://b0e5dutbc3xp8" path="res://assets/UI/9 Calender/27.png" id="29_wlckc"]
+[ext_resource type="Texture2D" uid="uid://djkwlogkjgjje" path="res://assets/UI/9 Calender/26.png" id="30_qexfv"]
+[ext_resource type="Texture2D" uid="uid://cyi0paid2kkgm" path="res://assets/UI/9 Calender/25.png" id="31_cvm3n"]
+[ext_resource type="Texture2D" uid="uid://8885qdxiayt2" path="res://assets/UI/9 Calender/24.png" id="32_dhm2s"]
+[ext_resource type="Texture2D" uid="uid://cr86avanva5nk" path="res://assets/UI/9 Calender/23.png" id="33_ifvaj"]
+[ext_resource type="Texture2D" uid="uid://dmmd40pdvvebj" path="res://assets/UI/9 Calender/22.png" id="34_60rxi"]
+[ext_resource type="Texture2D" uid="uid://cg1covej81tpf" path="res://assets/UI/9 Calender/21.png" id="35_srivx"]
+[ext_resource type="Texture2D" uid="uid://bu4wno4bg2tv4" path="res://assets/UI/9 Calender/20.png" id="36_4mbgh"]
+[ext_resource type="Texture2D" uid="uid://dpwpebrqletar" path="res://assets/UI/9 Calender/19.png" id="37_qtcpt"]
+[ext_resource type="Texture2D" uid="uid://bkp00bhis6d4u" path="res://assets/UI/9 Calender/18.png" id="38_i4usg"]
+[ext_resource type="Texture2D" uid="uid://c6qq1pfeilt15" path="res://assets/UI/9 Calender/17.png" id="39_hsmve"]
+[ext_resource type="Texture2D" uid="uid://dopyqj4qjlvaf" path="res://assets/UI/9 Calender/16.png" id="40_gc260"]
+[ext_resource type="Texture2D" uid="uid://1v7s8v44puh0" path="res://assets/UI/9 Calender/15.png" id="41_uvumt"]
+[ext_resource type="Texture2D" uid="uid://dfc3jbkpqp22m" path="res://assets/UI/9 Calender/14.png" id="42_ifo53"]
+[ext_resource type="Texture2D" uid="uid://da6ljvcrx4kvs" path="res://assets/UI/9 Calender/13.png" id="43_h27wx"]
+[ext_resource type="Texture2D" uid="uid://bo1atn0iaw56t" path="res://assets/UI/9 Calender/12.png" id="44_e3wnl"]
+[ext_resource type="Texture2D" uid="uid://ygsfurl47h8n" path="res://assets/UI/9 Calender/11.png" id="45_k1qhe"]
+[ext_resource type="Texture2D" uid="uid://bj2pexpyig4h5" path="res://assets/UI/9 Calender/10.png" id="46_oy3cv"]
+[ext_resource type="Texture2D" uid="uid://obc36flhiyse" path="res://assets/UI/9 Calender/9.png" id="47_l3oix"]
+[ext_resource type="Texture2D" uid="uid://ct7ryj2gfugvf" path="res://assets/UI/9 Calender/8.png" id="48_58p45"]
+[ext_resource type="Texture2D" uid="uid://8esrwr2jcclu" path="res://assets/UI/9 Calender/7.png" id="49_widy5"]
+[ext_resource type="Texture2D" uid="uid://cr68senohsvx" path="res://assets/UI/9 Calender/6.png" id="50_bxgig"]
+[ext_resource type="Texture2D" uid="uid://bqpm32sjnooyw" path="res://assets/UI/9 Calender/5.png" id="51_2uvfa"]
+[ext_resource type="Texture2D" uid="uid://csql51ooi1may" path="res://assets/UI/9 Calender/4.png" id="52_6wybh"]
+[ext_resource type="Texture2D" uid="uid://cadys07rdu1fi" path="res://assets/UI/9 Calender/3.png" id="53_k46bx"]
+[ext_resource type="Texture2D" uid="uid://b5cl2n54u8pto" path="res://assets/UI/9 Calender/2.png" id="54_da1r8"]
+[ext_resource type="Texture2D" uid="uid://bnf751c6r268n" path="res://assets/UI/9 Calender/1.png" id="55_k4wby"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="58_k8tea"]
+
+[sub_resource type="Animation" id="Animation_lcdbo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/cat:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(33, 30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/axolotl:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(209, 27.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/panda:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(384, 30)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/tiger:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(565, 32.5)]
+}
+
+[sub_resource type="Animation" id="Animation_a2t0j"]
+resource_name = "jingle"
+length = 1.6
+loop_mode = 1
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/cat:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(33, 30), Vector2(33, 32.5), Vector2(33, 35), Vector2(33, 32.5), Vector2(33, 30), Vector2(33, 27.5), Vector2(33, 25), Vector2(33, 27.5), Vector2(33, 30)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/axolotl:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(209, 27.5), Vector2(209, 25), Vector2(209, 27.5), Vector2(209, 30), Vector2(209, 32.5), Vector2(209, 35), Vector2(209, 32.5), Vector2(209, 30), Vector2(209, 27.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/panda:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(384, 30), Vector2(384, 32.5), Vector2(384, 35), Vector2(384, 32.5), Vector2(384, 30), Vector2(384, 27.5), Vector2(384, 25), Vector2(384, 27.5), Vector2(384, 30)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Background/tiger:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(565, 32.5), Vector2(565, 30), Vector2(565, 27.5), Vector2(565, 25), Vector2(565, 27.5), Vector2(565, 30), Vector2(565, 32.5), Vector2(565, 35), Vector2(565, 32.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dgebt"]
+_data = {
+&"RESET": SubResource("Animation_lcdbo"),
+&"jingle": SubResource("Animation_a2t0j")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1gwlf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_5y5ad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3kdj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ftgd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bdipa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3rsys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rc61t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_d6e3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_peqjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2ayou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ygykx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2vlo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_yf0qw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dg3f5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hnu5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ele25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ibj5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_te6nd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_3ywge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_cudxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_w7ur0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_n7dcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_u8df7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_wlckc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_qexfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_cvm3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_dhm2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ifvaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_60rxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_srivx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_4mbgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_qtcpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_i4usg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_hsmve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_gc260")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_uvumt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ifo53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_h27wx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_e3wnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_k1qhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_oy3cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_l3oix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_58p45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_widy5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_bxgig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_2uvfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_6wybh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_k46bx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_da1r8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_k4wby")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ocnca"]
+bg_color = Color(0.591804, 0.829779, 0.453113, 0.839216)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 7
+
+[sub_resource type="Animation" id="Animation_5y5ad"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4x3ib"]
+resource_name = "button"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.152941, 0.243137, 0.0980392, 0.839216), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3kdj3"]
+_data = {
+&"RESET": SubResource("Animation_5y5ad"),
+&"button": SubResource("Animation_4x3ib")
+}
+
+[node name="CharSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a2t0j")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_pepy4")
+expand_mode = 1
+
+[node name="cat" type="TextureButton" parent="Background"]
+custom_minimum_size = Vector2(180, 100)
+layout_mode = 2
+anchor_left = 0.107
+anchor_top = 0.178
+anchor_right = 0.107
+anchor_bottom = 0.178
+offset_left = -90.264
+offset_top = -87.0965
+offset_right = 89.736
+offset_bottom = 91.9036
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("2_a2t0j")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/ind = 0
+
+[node name="axolotl" type="TextureButton" parent="Background"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+anchor_left = 0.26
+anchor_top = 0.187
+anchor_right = 0.26
+anchor_bottom = 0.188
+offset_left = -90.52
+offset_top = -86.9236
+offset_right = 89.48
+offset_bottom = 91.4284
+texture_normal = ExtResource("3_lcdbo")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/ind = 1
+
+[node name="panda" type="TextureButton" parent="Background"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+anchor_left = 0.411
+anchor_top = 0.178
+anchor_right = 0.411
+anchor_bottom = 0.178
+offset_left = -89.472
+offset_top = -87.0965
+offset_right = 90.528
+offset_bottom = 91.9036
+texture_normal = ExtResource("4_dgebt")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/ind = 2
+
+[node name="tiger" type="TextureButton" parent="Background"]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+anchor_left = 0.569
+anchor_top = 0.19
+anchor_right = 0.569
+anchor_bottom = 0.19
+offset_left = -90.488
+offset_top = -93.8675
+offset_right = 89.512
+offset_bottom = 85.1325
+texture_normal = ExtResource("5_5kqyn")
+ignore_texture_size = true
+stretch_mode = 0
+metadata/ind = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_dgebt")
+}
+autoplay = "jingle"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+self_modulate = Color(0.22, 0.263, 0.243, 0.628)
+position = Vector2(936, 322)
+scale = Vector2(0.635714, 1.36574)
+sprite_frames = SubResource("SpriteFrames_1gwlf")
+
+[node name="Button" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 26.0
+offset_top = 572.0
+offset_right = 176.0
+offset_bottom = 620.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 0.996078, 0.694118, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("58_k8tea")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ocnca")
+text = "NEXT"
+
+[node name="BNAni" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_3kdj3")
+}

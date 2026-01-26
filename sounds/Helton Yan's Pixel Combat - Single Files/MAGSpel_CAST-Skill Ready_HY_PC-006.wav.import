@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bk5py6x55ktoe"
+path="res://.godot/imported/MAGSpel_CAST-Skill Ready_HY_PC-006.wav-0d5826cd2eefe8f7d4700f74a8f1f166.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/MAGSpel_CAST-Skill Ready_HY_PC-006.wav"
+dest_files=["res://.godot/imported/MAGSpel_CAST-Skill Ready_HY_PC-006.wav-0d5826cd2eefe8f7d4700f74a8f1f166.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

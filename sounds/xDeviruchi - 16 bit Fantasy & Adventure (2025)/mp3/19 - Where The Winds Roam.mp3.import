@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cs8eiqub1fmdu"
+path="res://.godot/imported/19 - Where The Winds Roam.mp3-6dd3e2e241b154b5a4cfa1d72ab2350c.mp3str"
+
+[deps]
+
+source_file="res://sounds/xDeviruchi - 16 bit Fantasy & Adventure (2025)/mp3/19 - Where The Winds Roam.mp3"
+dest_files=["res://.godot/imported/19 - Where The Winds Roam.mp3-6dd3e2e241b154b5a4cfa1d72ab2350c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

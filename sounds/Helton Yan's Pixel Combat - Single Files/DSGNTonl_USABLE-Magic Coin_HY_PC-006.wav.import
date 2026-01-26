@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://djtsys4je3f02"
+path="res://.godot/imported/DSGNTonl_USABLE-Magic Coin_HY_PC-006.wav-ca4c7f6fee3b5a3d481a673068370a32.sample"
+
+[deps]
+
+source_file="res://sounds/Helton Yan's Pixel Combat - Single Files/DSGNTonl_USABLE-Magic Coin_HY_PC-006.wav"
+dest_files=["res://.godot/imported/DSGNTonl_USABLE-Magic Coin_HY_PC-006.wav-ca4c7f6fee3b5a3d481a673068370a32.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

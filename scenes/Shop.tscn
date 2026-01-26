@@ -1,0 +1,420 @@
+[gd_scene load_steps=17 format=3 uid="uid://clpj0ptst6enn"]
+
+[ext_resource type="Script" uid="uid://d5gro0kbse8" path="res://scripts/shop.gd" id="1_ec5oe"]
+[ext_resource type="Texture2D" uid="uid://b7f3tc5yutqe3" path="res://assets/Scenes/ChatGPT Image Jul 19, 2025, 06_03_31 PM.png" id="2_t4md6"]
+[ext_resource type="Texture2D" uid="uid://bxtdifwxtk6u5" path="res://assets/to_use/fc1648.png" id="3_ht580"]
+[ext_resource type="Texture2D" uid="uid://cs2f526gy7lfs" path="res://assets/to_use/shadow-removebg-preview.png" id="4_skkvx"]
+[ext_resource type="Texture2D" uid="uid://dpwqj4oi7pysj" path="res://assets/to_use/fc891.png" id="5_eo1la"]
+[ext_resource type="Texture2D" uid="uid://sk0meprdwsco" path="res://assets/to_use/fc92.png" id="6_toxd1"]
+[ext_resource type="Texture2D" uid="uid://65d1h53k8oyd" path="res://assets/to_use/fc294.png" id="7_47hci"]
+[ext_resource type="FontFile" uid="uid://c7yqvdn6pwuqe" path="res://assets/UI/Jersey15-Regular.ttf" id="8_hd80v"]
+[ext_resource type="PackedScene" uid="uid://b31o28qvxmwts" path="res://scenes/money.tscn" id="9_skkvx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ht580"]
+bg_color = Color(0.618911, 0.475355, 1.92523e-07, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_skkvx"]
+bg_color = Color(0.419935, 0.0114839, 4.81308e-08, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eo1la"]
+bg_color = Color(0, 0.162652, 0.338678, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="Animation" id="Animation_skkvx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopRect/ItemOne:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(270, 331)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShopRect/ItemTwo:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(401, 325)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ShopRect/ItemThree:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(552, 331)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ShopRect/ItemFour:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(700, 328)]
+}
+
+[sub_resource type="Animation" id="Animation_ht580"]
+resource_name = "float"
+length = 2.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ShopRect/ItemOne:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(270, 331), Vector2(270, 326), Vector2(270, 321), Vector2(270, 316), Vector2(270, 311), Vector2(270, 316), Vector2(270, 321), Vector2(270, 325)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShopRect/ItemTwo:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(401, 320), Vector2(401, 315), Vector2(401, 310), Vector2(401, 305), Vector2(401, 310), Vector2(401, 315), Vector2(401, 320), Vector2(401, 325)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ShopRect/ItemThree:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(552, 321), Vector2(552, 316), Vector2(552, 311), Vector2(552, 316), Vector2(552, 321), Vector2(552, 326), Vector2(552, 331), Vector2(552, 326)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ShopRect/ItemFour:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(700, 308), Vector2(700, 313), Vector2(700, 318), Vector2(700, 323), Vector2(700, 328), Vector2(700, 323), Vector2(700, 318), Vector2(700, 313)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eo1la"]
+_data = {
+&"RESET": SubResource("Animation_skkvx"),
+&"float": SubResource("Animation_ht580")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_toxd1"]
+bg_color = Color(0, 0.270076, 0.102443, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ec5oe")
+
+[node name="ShopRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t4md6")
+expand_mode = 1
+
+[node name="Money" parent="ShopRect" instance=ExtResource("9_skkvx")]
+modulate = Color(0.564962, 0.564962, 0.564962, 1)
+layout_mode = 1
+offset_top = -2.0
+offset_bottom = -2.0
+scale = Vector2(2.7, 2.7)
+
+[node name="ItemOne" type="TextureButton" parent="ShopRect"]
+self_modulate = Color(0.521569, 0.521569, 0.521569, 1)
+layout_mode = 0
+offset_left = 270.0
+offset_top = 331.0
+offset_right = 371.0
+offset_bottom = 432.0
+texture_normal = ExtResource("3_ht580")
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="ShopRect"]
+modulate = Color(0.0316549, 0.0316549, 0.0316549, 0.635294)
+layout_mode = 0
+offset_left = 265.0
+offset_top = 431.0
+offset_right = 367.0
+offset_bottom = 448.0
+texture = ExtResource("4_skkvx")
+expand_mode = 1
+
+[node name="ItemTwo" type="TextureButton" parent="ShopRect"]
+self_modulate = Color(0.662452, 0.662452, 0.662452, 1)
+layout_mode = 0
+offset_left = 401.0
+offset_top = 320.0
+offset_right = 502.0
+offset_bottom = 421.0
+texture_normal = ExtResource("5_eo1la")
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureRect" parent="ShopRect"]
+modulate = Color(0.0313726, 0.0313726, 0.0313726, 0.635294)
+layout_mode = 0
+offset_left = 404.0
+offset_top = 431.0
+offset_right = 510.0
+offset_bottom = 448.0
+texture = ExtResource("4_skkvx")
+expand_mode = 1
+
+[node name="ItemThree" type="TextureButton" parent="ShopRect"]
+self_modulate = Color(0.724643, 0.724642, 0.724643, 1)
+layout_mode = 0
+offset_left = 552.0
+offset_top = 321.0
+offset_right = 653.0
+offset_bottom = 422.0
+texture_normal = ExtResource("6_toxd1")
+stretch_mode = 0
+
+[node name="TextureRect3" type="TextureRect" parent="ShopRect"]
+modulate = Color(0.0313726, 0.0313726, 0.0313726, 0.635294)
+layout_mode = 0
+offset_left = 550.0
+offset_top = 431.0
+offset_right = 656.0
+offset_bottom = 448.0
+texture = ExtResource("4_skkvx")
+expand_mode = 1
+
+[node name="ItemFour" type="TextureButton" parent="ShopRect"]
+self_modulate = Color(0.794121, 0.794121, 0.794121, 1)
+layout_mode = 0
+offset_left = 700.0
+offset_top = 308.0
+offset_right = 801.0
+offset_bottom = 409.0
+texture_normal = ExtResource("7_47hci")
+stretch_mode = 0
+
+[node name="TextureRect4" type="TextureRect" parent="ShopRect"]
+modulate = Color(0.0313726, 0.0313726, 0.0313726, 0.635294)
+layout_mode = 0
+offset_left = 692.0
+offset_top = 432.0
+offset_right = 798.0
+offset_bottom = 449.0
+texture = ExtResource("4_skkvx")
+expand_mode = 1
+
+[node name="Info" type="Label" parent="ShopRect"]
+modulate = Color(0.768729, 0.768729, 0.768729, 0.92549)
+layout_mode = 0
+offset_left = 242.0
+offset_top = 491.0
+offset_right = 914.0
+offset_bottom = 594.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 6
+theme_override_fonts/font = ExtResource("8_hd80v")
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Buy" type="Button" parent="ShopRect"]
+layout_mode = 0
+offset_left = 920.0
+offset_top = 586.0
+offset_right = 1006.0
+offset_bottom = 621.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("8_hd80v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ht580")
+text = "BUY"
+
+[node name="Leave" type="Button" parent="ShopRect"]
+layout_mode = 0
+offset_left = 1022.0
+offset_top = 586.0
+offset_right = 1108.0
+offset_bottom = 621.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("8_hd80v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_skkvx")
+text = "LEAVE"
+
+[node name="Sell" type="Button" parent="ShopRect"]
+layout_mode = 0
+offset_left = 819.0
+offset_top = 586.0
+offset_right = 905.0
+offset_bottom = 621.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("8_hd80v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_eo1la")
+disabled = true
+text = "SELL"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_eo1la")
+}
+autoplay = "float"
+
+[node name="Box" type="Line2D" parent="."]
+position = Vector2(754, -309)
+points = PackedVector2Array(262, 318, 389, 318, 389, 441, 262, 441)
+closed = true
+width = 3.0
+default_color = Color(0.456, 0.456, 0.456, 0.552)
+
+[node name="InvenConsume" type="TextureButton" parent="."]
+self_modulate = Color(0.521569, 0.521569, 0.521569, 1)
+layout_mode = 0
+offset_left = 775.0
+offset_top = 20.0
+offset_right = 876.0
+offset_bottom = 121.0
+disabled = true
+stretch_mode = 0
+
+[node name="SBox" type="Line2D" parent="."]
+position = Vector2(627, -309)
+points = PackedVector2Array(262, 318, 389, 318, 389, 441, 262, 441)
+closed = true
+width = 3.0
+default_color = Color(0.454902, 0.454902, 0.454902, 0.552941)
+
+[node name="InvenPOne" type="TextureButton" parent="."]
+self_modulate = Color(0.521569, 0.521569, 0.521569, 1)
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 20.0
+offset_right = 1130.0
+offset_bottom = 121.0
+disabled = true
+stretch_mode = 0
+
+[node name="TBox" type="Line2D" parent="."]
+position = Vector2(500, -309)
+points = PackedVector2Array(262, 318, 389, 318, 389, 441, 262, 441)
+closed = true
+width = 3.0
+default_color = Color(0.454902, 0.454902, 0.454902, 0.552941)
+
+[node name="InvenPTwo" type="TextureButton" parent="."]
+self_modulate = Color(0.521569, 0.521569, 0.521569, 1)
+layout_mode = 0
+offset_left = 902.0
+offset_top = 20.0
+offset_right = 1003.0
+offset_bottom = 121.0
+disabled = true
+stretch_mode = 0
+
+[node name="Reroll" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 837.0
+offset_top = 341.0
+offset_right = 923.0
+offset_bottom = 405.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("8_hd80v")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_toxd1")
+text = "Reroll
+250"
+
+[node name="TextureRect5" type="TextureRect" parent="Reroll"]
+modulate = Color(0.0313726, 0.0313726, 0.0313726, 0.635294)
+layout_mode = 0
+offset_left = -10.0
+offset_top = 90.0
+offset_right = 96.0
+offset_bottom = 107.0
+texture = ExtResource("4_skkvx")
+expand_mode = 1

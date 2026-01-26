@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyg0jdovmmas"]
+
+[ext_resource type="Script" uid="uid://dfbq5pe034syp" path="res://scripts/InventoryUI.gd" id="1_ju2k0"]
+[ext_resource type="Texture2D" uid="uid://cxhqysuni35cf" path="res://assets/Pixel_Art_Wooden_Tile_Grid-removebg-preview.png" id="2_ju2k0"]
+
+[node name="InventoryUI" type="Control"]
+modulate = Color(0.672752, 0.672751, 0.672752, 1)
+layout_mode = 3
+anchor_top = 0.009
+anchor_right = 0.306
+anchor_bottom = 0.539
+offset_left = 1.0
+offset_top = 0.168
+offset_right = 0.487976
+offset_bottom = -0.272034
+script = ExtResource("1_ju2k0")
+
+[node name="Craft" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.992
+anchor_bottom = 1.013
+offset_left = 65.0
+offset_top = 67.0
+offset_right = 388.816
+offset_bottom = 392.541
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.422494, 0.416615)
+texture = ExtResource("2_ju2k0")
+expand_mode = 1
+
+[node name="HandGrid" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.864
+anchor_top = 0.875
+anchor_right = 1.401
+anchor_bottom = 1.417
+offset_left = -0.127991
+offset_top = -0.124969
+offset_right = -126.152
+offset_bottom = -124.031
+scale = Vector2(3, 3)
+theme_override_constants/h_separation = 7
+theme_override_constants/v_separation = 5
+columns = 3
